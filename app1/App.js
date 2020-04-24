@@ -6,29 +6,53 @@
  * @flow strict-local
  */
 
-import React from 'react';
+import React,{ useState } from 'react';
 import {
-  SafeAreaView,
+  View,
   StyleSheet,
   Text,
   StatusBar,
+  TextInput,
+  
 } from 'react-native';
 
-import {
-  Header,
-  LearnMoreLinks,
-  Colors,
-  DebugInstructions,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
+function Coisa(props){
+  return(
+    <View
+      style={{
+        paddingTop:10,
+        paddingBottom:10,
+      }}
+    >
+      <Text>Não tenho {props.nome}.</Text>
+    </View>
+  )
+}
+
+function Coisa2(){
+  const [nome, setNome]=useState('...');
+  return(
+    <View>
+      <Text>Mas tenho {nome}.</Text>
+      <TextInput 
+      onChangeText={nome =>setNome(nome) }
+      placeholder='o que você tem?'
+      style={{
+        height: 45,
+        borderColor: 'violet',
+        borderWidth: 1
+      }}
+        />
+    </View>
+  )
+}
 
 const App: () => React$Node = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
-        <Text>oi!</Text>
-      </SafeAreaView>
+        <Coisa nome='geladeira'/>
+        <Coisa2/>
     </>
   );
 };
