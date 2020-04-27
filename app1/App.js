@@ -13,8 +13,8 @@ import {
   Text,
   StatusBar,
   TextInput,
-  
 } from 'react-native';
+import AppState2 from './src/pages/appState';
 
 function Coisa(props){
   return(
@@ -31,9 +31,12 @@ function Coisa(props){
 
 function Coisa2(){
   const [nome, setNome]=useState('...');
+  //console.log('teste');
   return(
+   
     <View>
       <Text>Mas tenho {nome}.</Text>
+      
       <TextInput 
       onChangeText={nome =>setNome(nome) }
       placeholder='o que você tem?'
@@ -51,8 +54,9 @@ const App: () => React$Node = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
-        <Coisa nome='geladeira'/>
-        <Coisa2/>
+      <AppState2></AppState2>
+      <Coisa nome='geladeira'/>
+      <Coisa2/>
     </>
   );
 };

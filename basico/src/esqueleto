@@ -1,0 +1,26 @@
+import React, {Component} from 'react';
+import {
+} from 'react-native';
+
+
+const App: () => React$Node = () => {
+  return (
+    <>
+      <StatusBar barStyle="dark-content" />
+      <SafeAreaView>
+        
+      </SafeAreaView>
+    </>
+  );
+};
+
+class App extends Component{
+    render(){
+        return;
+    }
+}
+
+const styles = StyleSheet.create({
+});
+
+export default App;
