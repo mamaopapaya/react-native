@@ -16,22 +16,23 @@ class AppExtends extends Component{
       txtStateless:'Texto Default - clique aqui!',
       estado1:1,
     }
-
+/*
     mudaEstado=()=>{
       //console.log(this.state.meuEstado);
       this.setState({meuEstado:'Estado Mudou!'})
       //console.log(this.state.txtStateless);
-    }
-/*
+    }*/
+
     mudaEstado=(val)=>{
       //console.log(this.state.meuEstado);
-      if(val===1){
+      if(val){
         this.setState({meuEstado:'Estado Mudou!'})
       }
-      
-      //console.log(this.state.txtStateless);
+      else
+        this.setState({meuEstado:'Estado original - Clique aqui!'})
+      this.state.estado1=!val;
     }
-    */
+    
     mudaEstado2=()=>{
       this.setState({txtStateless:'Estado Stateless Mudou!'})
     }
@@ -42,7 +43,7 @@ class AppExtends extends Component{
                 <Text>Mudança de estado:</Text>
                 <Text 
                  style={styles.textoClicavel}
-                 onPress={this.mudaEstado}
+                 onPress={()=>this.mudaEstado(this.state.estado1)}
                  >
                    {this.state.meuEstado}
                    </Text>

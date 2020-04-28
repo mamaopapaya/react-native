@@ -7,6 +7,7 @@ import {
 } from 'react-native';
 import AppExtends from './componentes/AppExtends';
 import Flexbox from './componentes/Flexbox';
+import Lista from './componentes/Lista';
 
 
 const App: () => React$Node = () => {
@@ -15,8 +16,12 @@ const App: () => React$Node = () => {
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
-          <AppExtends/>
-          <Flexbox/>
+        
+          {/*<AppExtends/>
+          <Flexbox/>*/}
+          <Lista/>
+         
+
       </SafeAreaView>
     </>
     );
