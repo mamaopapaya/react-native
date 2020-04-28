@@ -6,6 +6,7 @@ import {
   Text,
 } from 'react-native';
 import AppExtends from './componentes/AppExtends';
+import Flexbox from './componentes/Flexbox';
 
 
 const App: () => React$Node = () => {
@@ -15,7 +16,7 @@ const App: () => React$Node = () => {
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
           <AppExtends/>
-        
+          <Flexbox/>
       </SafeAreaView>
     </>
     );

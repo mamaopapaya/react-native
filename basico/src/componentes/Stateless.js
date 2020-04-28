@@ -24,6 +24,7 @@ const styles = StyleSheet.create({
     
     textoClicavel:{
       paddingTop:5,
+      paddingBottom:5,
       color:'#DAAA50',
     }
   });

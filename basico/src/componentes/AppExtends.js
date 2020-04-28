@@ -13,7 +13,8 @@ import Stateless from './Stateless';
 class AppExtends extends Component{
     state={
       meuEstado:'Estado original - Clique aqui!',
-      txtStateless:'Texto Default',
+      txtStateless:'Texto Default - clique aqui!',
+      estado1:1,
     }
 
     mudaEstado=()=>{
@@ -21,7 +22,16 @@ class AppExtends extends Component{
       this.setState({meuEstado:'Estado Mudou!'})
       //console.log(this.state.txtStateless);
     }
-
+/*
+    mudaEstado=(val)=>{
+      //console.log(this.state.meuEstado);
+      if(val===1){
+        this.setState({meuEstado:'Estado Mudou!'})
+      }
+      
+      //console.log(this.state.txtStateless);
+    }
+    */
     mudaEstado2=()=>{
       this.setState({txtStateless:'Estado Stateless Mudou!'})
     }
@@ -31,8 +41,9 @@ class AppExtends extends Component{
             <View style={styles.container}>
                 <Text>Mudança de estado:</Text>
                 <Text 
-                style={styles.textoClicavel}
-                 onPress={this.mudaEstado}>
+                 style={styles.textoClicavel}
+                 onPress={this.mudaEstado}
+                 >
                    {this.state.meuEstado}
                    </Text>
                 <Stateless 
