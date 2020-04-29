@@ -8,6 +8,7 @@ import {
 import AppExtends from './componentes/AppExtends';
 import Flexbox from './componentes/Flexbox';
 import Lista from './componentes/Lista';
+import Login from './componentes/Login';
 
 
 const App: () => React$Node = () => {
@@ -20,6 +21,7 @@ const App: () => React$Node = () => {
           {/*<AppExtends/>
           <Flexbox/>*/}
           <Lista/>
+          <Login/>
          
 
       </SafeAreaView>
