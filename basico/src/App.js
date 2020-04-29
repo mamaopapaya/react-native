@@ -9,6 +9,7 @@ import AppExtends from './componentes/AppExtends';
 import Flexbox from './componentes/Flexbox';
 import Lista from './componentes/Lista';
 import Login from './componentes/Login';
+import ListaScroll from './componentes/ListaScroll';
 
 
 const App: () => React$Node = () => {
@@ -17,13 +18,15 @@ const App: () => React$Node = () => {
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
+        {/*<AppExtends/>
+        <Flexbox/>
+        */}
+        {/*
+        <Lista/>
         
-          {/*<AppExtends/>
-          <Flexbox/>*/}
-          <Lista/>
-          <Login/>
-         
-
+        <Login/>
+      */}
+        <ListaScroll/>
       </SafeAreaView>
     </>
     );

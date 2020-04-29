@@ -23,7 +23,7 @@ class Lista extends Component{
             {
                 id:4,
                 nome:'Cacau',
-            },
+            },                   
         ]
     }
 
@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
         padding:6,
         backgroundColor:'#CAAA67',
         alignItems:'center',
-        marginBottom:2,
+        margin:2,
     },
     nome:{
         color: '#4f603c'
