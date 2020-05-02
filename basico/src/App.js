@@ -12,6 +12,7 @@ import Login from './componentes/Login';
 import ListaScroll from './componentes/ListaScroll';
 import ImagemCora from './componentes/ImagemCora';
 import HttpFetch from './componentes/HttpFetch';
+import VariosBotoes from './componentes/VariosBotoes';
 
 
 const App: () => React$Node = () => {
@@ -32,6 +33,7 @@ const App: () => React$Node = () => {
         <ListaScroll/>*/}
         <ImagemCora/>
         <HttpFetch/>
+        <VariosBotoes/>
       </SafeAreaView>
     </>
     );
