@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import { StyleSheet, Button, TouchableOpacity, Text, View, TouchableHighlight, TouchableNativeFeedback, TouchableWithoutFeedback } from 'react-native';
 
 
