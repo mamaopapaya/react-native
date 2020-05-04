@@ -40,12 +40,12 @@ class Login extends Component{
                   onChangeText={this.recebeSenha}
                 />
                 {/**Botao de logar */}
-                    <TouchableOpacity
-                      style={styles.botao}
-                      onPress={()=>this.dadosAcesso(this.state.email,this.state.senha)}
-                    >
-                        <Text>Enviar</Text>
-                    </TouchableOpacity>
+                <TouchableOpacity
+                  style={styles.botao}
+                  onPress={()=>this.dadosAcesso(this.state.email,this.state.senha)}
+                >
+                    <Text>Enviar</Text>
+                </TouchableOpacity>
             </View>
         )
     }

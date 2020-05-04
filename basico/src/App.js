@@ -4,6 +4,7 @@ import {
   StyleSheet,
   StatusBar,
   Text,
+
 } from 'react-native';
 import AppExtends from './componentes/AppExtends';
 import Flexbox from './componentes/Flexbox';
@@ -16,6 +17,7 @@ import VariosBotoes from './componentes/VariosBotoes';
 import Animados from './componentes/Animados';
 
 
+
 const App: () => React$Node = () => {
     
     return (
@@ -25,18 +27,19 @@ const App: () => React$Node = () => {
         {/*<AppExtends/>
         <Flexbox/>
         */}
-        {/*
+        
         <Lista/>
         
         <Login/>
-      */}
+    
       {/*
         <ListaScroll/>*/}
         {/*
         <ImagemCora/>
         <HttpFetch/>
         <VariosBotoes/>*/}
-        <Animados/>
+        {/*
+        <Animados/>*/}
       </SafeAreaView>
       
     </>
@@ -44,7 +47,7 @@ const App: () => React$Node = () => {
 };
 
 const styles = StyleSheet.create({
-
 });
 
 export default App;
+
