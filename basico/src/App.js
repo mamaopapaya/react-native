@@ -15,6 +15,7 @@ import ImagemCora from './componentes/ImagemCora';
 import HttpFetch from './componentes/HttpFetch';
 import VariosBotoes from './componentes/VariosBotoes';
 import Animados from './componentes/Animados';
+import ModalEx from './componentes/ModalEx';
 
 
 
@@ -27,12 +28,10 @@ const App: () => React$Node = () => {
         {/*<AppExtends/>
         <Flexbox/>
         */}
-        
+        {/*
         <Lista/>
-        
-        <Login/>
-    
-      {/*
+        <Login/>*/}
+        {/*
         <ListaScroll/>*/}
         {/*
         <ImagemCora/>
@@ -40,6 +39,8 @@ const App: () => React$Node = () => {
         <VariosBotoes/>*/}
         {/*
         <Animados/>*/}
+        <Text>fffff</Text>
+        <ModalEx/>
       </SafeAreaView>
       
     </>
