@@ -18,6 +18,7 @@ import Animados from './componentes/Animados';
 import ModalEx from './componentes/ModalEx';
 import ModalEx2 from './componentes/ModalEx2';
 import Indicador from './componentes/Indicador';
+import Selecionador from './componentes/Selecionador';
 
 
 
@@ -43,6 +44,7 @@ const App: () => React$Node = () => {
         <Animados/>*/}
         <Indicador/>
         <ModalEx2/>
+        <Selecionador/>
       </SafeAreaView>
       
     </>

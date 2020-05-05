@@ -1,4 +1,6 @@
-//exemplo de activity indicator
+/*exemplo de activity indicator
+eh aquele indicador de carregando
+*/
 import React, {Component} from 'react';
 import { StyleSheet, View, ActivityIndicator } from 'react-native';
 
