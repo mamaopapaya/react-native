@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { StyleSheet, View, Modal, TouchableHighlight, Text } from 'react-native';
+import { View, Modal, TouchableHighlight, Text } from 'react-native';
 
 class ModalEx extends Component{
     state={
@@ -35,6 +35,3 @@ class ModalEx extends Component{
 }
 
 export default ModalEx;
-
-const styles = StyleSheet.create({
-});

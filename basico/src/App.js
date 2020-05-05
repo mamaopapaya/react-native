@@ -16,6 +16,7 @@ import HttpFetch from './componentes/HttpFetch';
 import VariosBotoes from './componentes/VariosBotoes';
 import Animados from './componentes/Animados';
 import ModalEx from './componentes/ModalEx';
+import ModalEx2 from './componentes/ModalEx2';
 
 
 
@@ -39,8 +40,7 @@ const App: () => React$Node = () => {
         <VariosBotoes/>*/}
         {/*
         <Animados/>*/}
-        <Text>fffff</Text>
-        <ModalEx/>
+        <ModalEx2/>
       </SafeAreaView>
       
     </>
