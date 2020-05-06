@@ -1,8 +1,10 @@
 //selecionador - Picker
 /*picker sera removido de react-native core
 */
+/*
 import React, {Component} from 'react';
-import { View, Picker, Text} from 'react-native';
+import { View, Text} from 'react-native';
+import {Picker} from '@react-native-community/picker';
 
 class Selecionador extends Component{
     state={
@@ -33,4 +35,4 @@ class Selecionador extends Component{
 
 export default Selecionador;
 
-//const styles = StyleSheet.create({});
+*/

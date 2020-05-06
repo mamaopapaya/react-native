@@ -3,6 +3,7 @@ eh aquele indicador de carregando
 */
 import React, {Component} from 'react';
 import { StyleSheet, View, ActivityIndicator } from 'react-native';
+import OnOff from './LigaDesliga';
 
 
 class Indicador extends Component{
@@ -26,6 +27,7 @@ class Indicador extends Component{
                   color='violet'
                   size='large'
                 />
+                
             </View>
         )
     }
