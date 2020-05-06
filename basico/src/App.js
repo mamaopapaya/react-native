@@ -18,11 +18,22 @@ import Animados from './componentes/Animados';
 import ModalEx from './componentes/ModalEx';
 import ModalEx2 from './componentes/ModalEx2';
 import Indicador from './componentes/Indicador';
+import OnOff from './componentes/LigaDesliga';
 //import Selecionador from './componentes/Selecionador';
 
 
 
 const App: () => React$Node = () => {
+
+    var state={
+      valorSwitch:true,
+    }
+
+    var ativaSwitch=()=>{
+      //console.log(state.valorSwitch)
+      state.valorSwitch=!state.valorSwitch
+      //console.log(state.valorSwitch)
+    }
     
     return (
     <>
@@ -44,6 +55,11 @@ const App: () => React$Node = () => {
         <Animados/>*/}
         <Indicador/>
         <ModalEx2/>
+        <Text>switch errADO</Text>
+        <OnOff
+          valorSwitch={state.valorSwitch}
+          ativaSwitch={ativaSwitch}
+        />
       </SafeAreaView>
       
     </>

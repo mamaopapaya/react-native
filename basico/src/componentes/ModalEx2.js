@@ -37,6 +37,7 @@ class ModalEx2 extends Component{
                  * abreModal é uma funcao, tem q ser chamada
                  * como arrowfunc
                  */}
+                 <View style={styles.containerInicial}>
                 <TouchableHighlight
                   onPress={()=>this.abreModal(true)}
                 >
@@ -44,6 +45,7 @@ class ModalEx2 extends Component{
                       style={styles.botaoAbrir}
                     >abrir modal</Text>
                 </TouchableHighlight>
+                </View>
             </View>
         )
     }
@@ -56,7 +58,6 @@ const styles = StyleSheet.create({
         borderColor:'red',
         borderWidth:1,
         margin:3,
-        width:90,
         padding:3,
     },
     boxModal:{
@@ -70,4 +71,7 @@ const styles = StyleSheet.create({
         paddingTop:200,
         //alignItems:'center',//deixa a modal no centro horizontal
     },
+    containerInicial:{
+        width:90,
+    }
 });
